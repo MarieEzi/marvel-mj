@@ -1,0 +1,33 @@
+
+.header-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .logo {
+    height: 40px;
+    width: 180px;
+  }
+  
+  header a { 
+    border-radius: 5px;
+    border-style:solid ;
+    background-color: #E61C23;
+    color: white;
+    text-decoration: none;
+    padding : 10px;
+    margin :auto;
+    cursor: pointer;
+  }
+
+  .nav { 
+    display: flex;
+    justify-content: space-between;
+  }
+
+ a:hover {
+
+background-color: #fff;
+color: black;
+ }
