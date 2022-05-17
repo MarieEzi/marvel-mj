@@ -5,7 +5,6 @@ function Comics () {
   return (
         <div className="comics">
            <h1>Les Comics</h1>
-
               <Cardcomics/>
     </div>
 )

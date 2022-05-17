@@ -1,14 +1,12 @@
-import "./Card.css"
-
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 
 
-function Cardcharacters() {
+function info() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
-  
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,7 +23,6 @@ function Cardcharacters() {
     fetchData();
   }, []);
 
-  
   return (
     <div>
       {isLoading === true ? (
@@ -35,30 +32,9 @@ function Cardcharacters() {
           {data.results.map((character) => {
             return (
               <div key={character._id} className="characters-list">
-    <div className="card-container">
-    <div className="btn">
-           <button>
-             <a href="./pages/Favoris.js">J'aime</a>
-           </button>
-         </div>
-      <div className="image-container">
-      <img src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-              alt=""/>
-      </div>
-      
-      <div className="card-content">
-     
-      <div className="card-title">
-        <h2>{character.name}</h2>
-
         <div className="card-description">
-                <p>{character.description}</p>
+               <p> {character.description}</p>
         </div>
-         
-      </div>
-        </div>
-    </div>
-
     </div>
           )})}
     </div>
@@ -69,4 +45,4 @@ function Cardcharacters() {
   }
 
 
-export default Cardcharacters;
+export default info;

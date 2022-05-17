@@ -9,7 +9,12 @@ import "./header.css"
 
         return (
             <header className="header-component">
-                <img alt="logo-marvel" className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1600px-Marvel_Logo.svg.png?20161025051221" />
+                <img  alt="logo-marvel" 
+                className="logo" 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1600px-Marvel_Logo.svg.png?20161025051221"
+                onClick={() => {
+                    navigate("/");
+                } } />
 
                 <div className="nav">
 

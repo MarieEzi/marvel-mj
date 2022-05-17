@@ -4,9 +4,10 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //pages
+import Home from "./pages/Home"
 import Characters from "./pages/Characters";
 import Comics from "./pages/Comics";
-import Favoris from "./pages/Favoris";
+import Favoris from "./pages/Favorites";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
@@ -47,7 +48,8 @@ function App() {
     <Router>
       <Header token={token} setUser={setUser}/> 
   
-      <Routes>    
+      <Routes>   
+        <Route path="/"element={<Home/>}/>
         <Route path="/characters" element={<Characters/>} />
         <Route path="/comics" element={<Comics />} />
         <Route path="/favoris" element={<Favoris />} />

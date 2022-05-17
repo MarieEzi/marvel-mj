@@ -1,7 +1,7 @@
 import React from 'react'
 import Cardcharacters from "../components/Card/Cardcharacters"
 import Searchbar from "../components/Searchbar/Searchbar"
-import Pagination from '../components/Pagination/Pagination';
+//import Pagination from '../components/Pagination/Pagination';
 
 
 function Characters() {
@@ -10,7 +10,6 @@ function Characters() {
         <h1>Les personnages de Marvel</h1>
 <Searchbar />
 <Cardcharacters/>
-        <Pagination />
       </div>
   );
 }

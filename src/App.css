@@ -29,3 +29,19 @@ font-size: 18px;
 p { 
 font-size: 14px;
 }
+
+.home h1{
+  background-color:white ;
+  color:#E61C23 ;
+  height: 50px;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.home p {
+  color: black;
+  background-color: #fff;
+  height: 600px;
+  font-size: 30px;
+  padding: 150px 20px;
+}
