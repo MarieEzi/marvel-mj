@@ -13,7 +13,7 @@ function Cardcharacters() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get ("http://localhost:4000/characters");
+        const response = await axios.get ("https://marvel-backend-mj.herokuapp.com/characters");
        
         setData(response.data);
         setIsLoading(false);

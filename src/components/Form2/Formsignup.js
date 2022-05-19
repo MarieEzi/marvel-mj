@@ -17,7 +17,7 @@ const Signup = ({ setUser }) => {
       setErrorMessage("");
    
       const response = await axios.post(
-        `http://localhost:4000/user/signup`,
+        `https://marvel-backend-mj.herokuapp.com/user/signup`,
         {
           username: username,
           email: email,
